@@ -7,7 +7,8 @@ const PLACES = [
   { name: "Palo Alto", zip: "94303" },
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
-  { name: "Thiruvananthapuram", zip: "695581" }
+  { name: "Thiruvananthapuram", zip: "695010" },
+  { name: "Arizona", zip: "85001" }
 ];
 
 class WeatherDisplay extends Component {
