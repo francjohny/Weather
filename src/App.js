@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-// import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 import "bootswatch/flatly/bootstrap.css";
 
