@@ -7,7 +7,7 @@ const PLACES = [
   { name: "Palo Alto", zip: "94303" },
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
-  { name: "Thiruvananthapuram", zip: "695010" }
+  { name: "Thiruvananthapuram", zip: "695581" }
 ];
 
 class WeatherDisplay extends Component {
@@ -20,7 +20,7 @@ class WeatherDisplay extends Component {
   componentDidMount() {
     const zip = this.props.zip;
     const URL =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       zip +
       "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=imperial";
     fetch(URL).then(res => res.json()).then(json => {
@@ -31,7 +31,7 @@ class WeatherDisplay extends Component {
     const weatherData = this.state.weatherData;
     if (!weatherData) return <div>Loading</div>;
     const weather = weatherData.weather[0];
-    const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
+    const iconUrl = "https://openweathermap.org/img/w/" + weather.icon + ".png";
     return (
       <div>
         <h1>
